@@ -1,33 +1,30 @@
 .searchFilter {
-  padding: var(--spacing-3xl) 0;
-  background-color: var(--color-gray-50);
+  padding: 0;
+  background-color: transparent;
 }
 
 .searchContent {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .searchTitle {
-  text-align: center;
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-2xl);
-  color: var(--color-gray-900);
+  display: none;
 }
 
 .searchForm {
-  background-color: var(--color-white);
-  padding: var(--spacing-2xl);
-  border-radius: var(--border-radius-xl);
-  box-shadow: var(--shadow-md);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .formGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
 }
 
 .formGroup {
@@ -79,12 +76,13 @@
 }
 
 .btnPrimary {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--color-white);
+  font-weight: 600;
 }
 
 .btnPrimary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-accent-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }

@@ -13,6 +13,7 @@ interface ProjectCardProps {
   bathrooms?: number;
   image?: string;
   featured?: boolean;
+  status?: 'sur-plan' | 'pret-emmenager' | 'en-construction';
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -25,6 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   bathrooms,
   image,
   featured = false,
+  status = 'sur-plan',
 }) => {
   const router = useRouter();
   const { locale } = router;
@@ -35,14 +37,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       bedrooms: 'chambres',
       bathrooms: 'salles de bain',
       details: 'Voir les détails',
-      from: 'À partir de',
+      from: 'Prix de départ',
+      surPlan: 'Sur plan',
+      pretEmmenager: 'Prêt à emménager',
+      enConstruction: 'En construction',
     },
     en: {
       bedrooms: 'bedrooms',
       bathrooms: 'bathrooms',
       details: 'View details',
-      from: 'From',
+      from: 'Starting from',
+      surPlan: 'On plan',
+      pretEmmenager: 'Ready to move in',
+      enConstruction: 'Under construction',
     },
+  };
+
+  const statusLabels = {
+    'sur-plan': translations[currentLocale as 'fr' | 'en'].surPlan,
+    'pret-emmenager': translations[currentLocale as 'fr' | 'en'].pretEmmenager,
+    'en-construction': translations[currentLocale as 'fr' | 'en'].enConstruction,
   };
 
   const t = translations[currentLocale as 'fr' | 'en'];
@@ -58,6 +72,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <span>{title}</span>
             </div>
           )}
+          <span className={`${styles.statusBadge} ${styles[status]}`}>
+            {statusLabels[status]}
+          </span>
           {featured && <span className={styles.featuredBadge}>Vedette</span>}
         </div>
         <div className={styles.cardContent}>
@@ -83,9 +100,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
           </div>
           <div className={styles.cardFooter}>
-            <span className={styles.cardPrice}>
-              {t.from} {price}
-            </span>
+            <div className={styles.cardPrice}>
+              <span className={styles.priceLabel}>{t.from}</span>
+              <span className={styles.priceValue}>{price}</span>
+            </div>
             <span className={styles.cardAction}>{t.details} →</span>
           </div>
         </div>

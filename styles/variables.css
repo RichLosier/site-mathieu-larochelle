@@ -1,10 +1,13 @@
 :root {
-  /* Couleurs principales */
-  --color-primary: #1a365d;
-  --color-primary-dark: #0f2027;
-  --color-primary-light: #2d4a6b;
-  --color-accent: #d4af37;
-  --color-accent-light: #e8d5a3;
+  /* Couleurs principales - Thème Sunset */
+  --color-primary: #1e40af;
+  --color-primary-dark: #1e3a8a;
+  --color-primary-light: #3b82f6;
+  --color-accent: #f97316;
+  --color-accent-light: #fb923c;
+  --color-accent-dark: #ea580c;
+  --color-sunset-orange: #f97316;
+  --color-sunset-blue: #1e40af;
   
   /* Couleurs neutres */
   --color-white: #ffffff;

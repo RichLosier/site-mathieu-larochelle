@@ -1,7 +1,7 @@
 .statsRow {
-  padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
 }
 
 .statsContent {
@@ -23,7 +23,7 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: var(--spacing-md);
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .statSuffix {
@@ -33,7 +33,7 @@
 
 .statLabel {
   font-size: var(--font-size-lg);
-  color: var(--color-gray-200);
+  color: var(--color-gray-700);
   font-weight: 500;
 }
 

@@ -1,6 +1,6 @@
 .newsletter {
   padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  background: linear-gradient(135deg, var(--color-sunset-blue) 0%, var(--color-primary-dark) 50%, var(--color-sunset-orange) 100%);
   color: var(--color-white);
 }
 

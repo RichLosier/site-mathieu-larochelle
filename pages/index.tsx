@@ -2,8 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import HeaderNavigation from '../components/HeaderNavigation';
 import Footer from '../components/Footer';
-import HeroMathieu from '../components/HeroMathieu';
-import SearchFilter from '../components/SearchFilter';
+import HeroWithSearch from '../components/HeroWithSearch';
 import AdvisorBlock from '../components/AdvisorBlock';
 import ProjectCard from '../components/ProjectCard';
 import StatsRow from '../components/StatsRow';
@@ -23,31 +22,34 @@ export default function Home() {
       id: 'andara',
       title: 'Andara',
       location: 'Punta Cana, République Dominicaine',
-      price: '$250,000',
-      type: 'Appartement',
+      price: '$243,780',
+      type: 'Condo, Town House',
       bedrooms: 2,
       bathrooms: 2,
       featured: true,
+      status: 'sur-plan' as const,
     },
     {
       id: 'makai',
       title: 'Makai',
-      location: 'Cap Cana, République Dominicaine',
-      price: '$450,000',
-      type: 'Villa',
-      bedrooms: 4,
-      bathrooms: 4,
+      location: 'Punta Cana, République Dominicaine',
+      price: '$180,488',
+      type: 'Condo',
+      bedrooms: 2,
+      bathrooms: 2,
       featured: true,
+      status: 'sur-plan' as const,
     },
     {
-      id: 'casa-del-mar',
-      title: 'Casa del Mar',
-      location: 'Bavaro, République Dominicaine',
-      price: '$180,000',
-      type: 'Appartement',
-      bedrooms: 1,
-      bathrooms: 1,
+      id: 'the-reef',
+      title: 'The Reef',
+      location: 'Punta Cana, République Dominicaine',
+      price: '$245,000',
+      type: 'Condo',
+      bedrooms: 2,
+      bathrooms: 2,
       featured: false,
+      status: 'sur-plan' as const,
     },
   ];
 
@@ -97,11 +99,8 @@ export default function Home() {
       <HeaderNavigation />
 
       <main className={styles.mainContent}>
-        {/* Hero Section */}
-        <HeroMathieu />
-
-        {/* Search Filter */}
-        <SearchFilter />
+        {/* Hero Section with Search */}
+        <HeroWithSearch />
 
         {/* Advisor Block */}
         <AdvisorBlock />
