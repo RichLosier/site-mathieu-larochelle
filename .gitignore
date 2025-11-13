@@ -29,6 +29,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Scripts de déploiement (optionnel - peut être versionné)
+# deploy.sh
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
