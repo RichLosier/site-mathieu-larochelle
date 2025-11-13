@@ -1,0 +1,109 @@
+.cta {
+  padding: var(--spacing-4xl) 0;
+  text-align: center;
+}
+
+.cta.primary {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+  color: var(--color-gray-900);
+}
+
+.cta.secondary {
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.ctaTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cta.primary .ctaTitle {
+  color: var(--color-gray-900);
+}
+
+.cta.secondary .ctaTitle {
+  color: var(--color-gray-900);
+}
+
+.ctaDescription {
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+.cta.primary .ctaDescription {
+  color: var(--color-gray-800);
+}
+
+.cta.secondary .ctaDescription {
+  color: var(--color-gray-700);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-align: center;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: var(--spacing-md);
+}
+
+.cta.primary .ctaButton {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.cta.primary .ctaButton:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.cta.secondary .ctaButton {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.cta.secondary .ctaButton:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .ctaTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .ctaDescription {
+    font-size: var(--font-size-lg);
+  }
+
+  .ctaButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+

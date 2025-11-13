@@ -1,0 +1,140 @@
+.advisorBlock {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+}
+
+.advisorContent {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.advisorImage {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-xl);
+  object-fit: cover;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--border-radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+}
+
+.advisorText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.advisorName {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.advisorTitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.advisorDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-full);
+  color: var(--color-gray-700);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 1024px) {
+  .advisorContent {
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .advisorName {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .advisorBlock {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .advisorContent {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .advisorImage {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .advisorName {
+    font-size: var(--font-size-2xl);
+    text-align: center;
+  }
+
+  .advisorTitle {
+    text-align: center;
+  }
+
+  .advisorDescription {
+    text-align: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+

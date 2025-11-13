@@ -1,0 +1,44 @@
+.mainLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  padding-top: var(--header-height);
+}
+
+.pageHeader {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.pageHeader h1 {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+}
+
+.pageHeader p {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-200);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 70px;
+  }
+
+  .pageHeader {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .pageHeader h1 {
+    font-size: var(--font-size-3xl);
+  }
+}
+

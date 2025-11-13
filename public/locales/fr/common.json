@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "invest": "Investir",
+    "regions": "Régions",
+    "projects": "Projets",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Votre partenaire pour investir à l'étranger en toute confiance",
+    "subtitle": "Expert en immobilier international, je vous accompagne dans vos projets d'investissement en République Dominicaine, au Mexique et dans d'autres destinations de rêve.",
+    "ctaPrimary": "Planifier une rencontre",
+    "ctaSecondary": "Découvrir les projets"
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour investir dans l'immobilier à l'étranger.",
+    "navigation": "Navigation",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés"
+  }
+}
+

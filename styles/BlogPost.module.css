@@ -1,0 +1,116 @@
+.mainLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  padding-top: var(--header-height);
+}
+
+.article {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--color-primary-dark);
+}
+
+.articleHeader {
+  margin-bottom: var(--spacing-3xl);
+  text-align: center;
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.articleHeader h1 {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-gray-900);
+}
+
+.meta {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  color: var(--color-gray-600);
+  font-size: var(--font-size-base);
+}
+
+.articleContent {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-gray-700);
+}
+
+.articleContent h2 {
+  font-size: var(--font-size-3xl);
+  margin-top: var(--spacing-3xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-gray-900);
+}
+
+.articleContent h3 {
+  font-size: var(--font-size-2xl);
+  margin-top: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray-900);
+}
+
+.articleContent p {
+  margin-bottom: var(--spacing-lg);
+}
+
+.articleContent ul,
+.articleContent ol {
+  margin-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-2xl);
+}
+
+.articleContent li {
+  margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 70px;
+  }
+
+  .article {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .articleHeader h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .articleContent {
+    font-size: var(--font-size-base);
+  }
+}
+

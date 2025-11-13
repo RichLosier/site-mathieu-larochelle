@@ -1,0 +1,127 @@
+.newsletter {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+}
+
+.newsletterContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  text-align: center;
+}
+
+.newsletterHeader {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.newsletterTitle {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+}
+
+.newsletterSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+  margin: 0;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.formFields {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  transition: all var(--transition-fast);
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.subscribeButton {
+  padding: var(--spacing-md) var(--spacing-2xl);
+  background-color: var(--color-accent);
+  color: var(--color-gray-900);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.subscribeButton:hover:not(:disabled) {
+  background-color: var(--color-accent-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.subscribeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  padding: var(--spacing-md);
+  background-color: var(--color-success);
+  color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--spacing-md);
+}
+
+.errorMessage {
+  padding: var(--spacing-md);
+  background-color: var(--color-error);
+  color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .newsletterTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .formFields {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .subscribeButton {
+    width: 100%;
+  }
+}
+

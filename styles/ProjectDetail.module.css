@@ -1,0 +1,182 @@
+.mainLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  padding-top: var(--header-height);
+}
+
+.projectHeader {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.backLink:hover {
+  opacity: 1;
+}
+
+.projectHeader h1 {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+}
+
+.location {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-200);
+  margin-bottom: var(--spacing-lg);
+}
+
+.price {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.projectContent {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-3xl);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-600);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.description {
+  margin-top: var(--spacing-2xl);
+}
+
+.description h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.description p {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-gray-700);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.infoCard,
+.featuresCard {
+  background-color: var(--color-gray-50);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+}
+
+.infoCard h3,
+.featuresCard h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-gray-900);
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: var(--color-gray-700);
+}
+
+.infoValue {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featuresList li {
+  padding: var(--spacing-sm) 0;
+  color: var(--color-gray-700);
+  position: relative;
+  padding-left: var(--spacing-lg);
+}
+
+.featuresList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 70px;
+  }
+
+  .projectHeader {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .projectHeader h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .price {
+    font-size: var(--font-size-2xl);
+  }
+
+  .projectContent {
+    padding: var(--spacing-2xl) 0;
+  }
+}
+

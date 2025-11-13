@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "invest": "Invest",
+    "regions": "Regions",
+    "projects": "Projects",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your partner for investing abroad with confidence",
+    "subtitle": "International real estate expert, I guide you through your investment projects in the Dominican Republic, Mexico and other dream destinations.",
+    "ctaPrimary": "Schedule a meeting",
+    "ctaSecondary": "Discover projects"
+  },
+  "footer": {
+    "description": "Your trusted partner for investing in real estate abroad.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "follow": "Follow us",
+    "rights": "All rights reserved"
+  }
+}
+
